@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url("../images/background_image-grey_1.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+    height: 75px;
+    border-bottom: cornflowerblue double;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+}
+
+/* The styles for the operation of the 3-tier navigation menu */
+#nav_menu{
+    margin: 10px auto;
+}
+
+#nav_menu a{
+    text-align: center;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 176px;
+    padding: 10px 0;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
+#nav_menu ul li a.lastitem {
+    width: 11.125em;               /* So the menu fills the 706px width of the page */
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    border-radius: 50%;
+    border:1px solid cornflowerblue;
+}
+
+#nav_menu ul {
+    margin: 0 auto;
+    font-size: 25px;
+    width: 750px;
+    list-style: none;
+    position: relative;    /* So the first submenu can be positioned within the main menu */
+}
+#nav_menu ul li {
+    float: left;
+}
+#nav_menu ul ul {
+    display: none;         /* Don't display submenu until hover of the li element */
+    position: absolute;
+}
+#nav_menu ul ul li {
+    font-size: 18px;
+    float: none;           /* Display the submenus vertically */
+    position: relative;    /* So the second submenu can be positioned within the first submenu */
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;        /* Display the submenu on hover of the li element */
+}
+
+main{
+    margin:40px auto 30px;
+    padding-top: 30px;
+    width: 600px;
+}
+
+div #picture{
+    max-width: 600px;
+    min-width: 465px;
+    display: block;
+    border: 10px double;
+    text-align: center;
+    margin: auto;
+
+}
+
+main section{
+    width: 400px;
+    font-size: 20px;
+    margin: 0 auto 10px;
+    text-align: center;
+    padding-top: 25px;
+    line-height: 35px;
+}
+
+main h1{
+    padding-bottom: 10px;
+}
+#major{
+    padding-bottom: 10px;
+}
+footer{
+    margin:0 auto 5px;
+    padding-top: 15px;
+    border-top: double cornflowerblue;
+    text-align: center;
+    position: relative;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+}

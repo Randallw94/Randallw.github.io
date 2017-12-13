@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    top: 0;
+    width: 100%;
+    background-image: url("../images/background_image-grey_1.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header{
+    margin-top: 0.9375em; /*15/16*/
+    height: 50px;
+    background-image: url("../images/uscb campus.jpg");
+    padding: 0.9375em  1.46% 0.9375em 1.46%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+body {
+    max-width:1024px;
+    width: 97%;
+    margin: 0 auto;
+    padding: 0.625em 0; /* 10/16 */
+    height: 100%;
+}
+
+/* The styles for the operation of the 3-tier navigation menu */
+
+#nav_menu {
+    float: none;
+    height: 40px;
+    width: 97.66%; /* 1000/1024 *100 */
+    margin: 0 auto;
+}
+
+#nav_menu ul {
+    margin: 0 auto;
+    list-style: none;
+    position: relative;    /* So the first submenu can be positioned within the main menu */
+}
+
+#nav_menu a{
+     text-align: center;
+    display: block;
+    text-decoration: none;
+    color:white;
+    margin: 0 auto;
+ }
+
+#nav_menu ul li {
+    float: left;
+    width: 25%;
+    margin: 0 auto;
+}
+#nav_menu ul li a {
+    padding: 0.625em 0; /*10/16*/
+    text-decoration: none;
+}
+
+#nav_menu ul ul {
+    display: none;         /* Don't display submenu until hover of the li element */
+    position: absolute;
+    text-align: center;
+    background-color: red;
+}
+#nav_menu ul ul li {
+    float: none;           /* Display the submenus vertically */
+    background-color: fuchsia;
+}
+
+
+#nav_menu ul li:hover > ul {
+    display: block;        /* Display the submenu on hover of the li element */
+}
+
+/* The styles for the formatting of the 3-tier navigation menu */
+
+
+
+
+
+main{
+    font-size: 20px;
+    width: 97.66%; /* 1000/1024*100 */
+    margin:auto;
+    padding-top: 6.25em; /*100/16*/
+}
+
+main h1{
+    margin: 0 auto;
+    text-align: center;
+    width: 97.66%;
+}
+
+main ul{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 1.5625em;
+    width: 97.66%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    line-height: 60px;
+}
+
+main #container{
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.25em;
+    width: 78.125% /* 800/1024 */
+}
+
+ div.gallery{
+     text-align: center;
+     width: 100%;
+     height:200px;
+     margin-left:auto;
+     margin-right:auto;
+     margin-top: 1.25em;
+}
+
+footer{
+    margin:0 auto 0.3125em;
+    padding:0.9375em 1.875% 0.9375em 1.875%;
+    text-align: center;
+    bottom: 0;
+}
+
+
+@media only screen and (max-width:800px) {
+    html {
+        background-image:url("../images/background_image 2.jpg");
+    }
+    body {
+        font-size: 90%;
+    }
+
+}

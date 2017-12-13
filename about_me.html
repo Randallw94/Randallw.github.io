@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Inserted keywords for metadata if people miss spell my last name -->
+    <title> James Randall's Resume</title>
+    <link  href="images/favicon.icon">
+    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/about_me_rwd.css" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="javascript/slide_show.js"></script>
+</head>
+
+<body>
+<header>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="#">Education</a>
+                <ul>
+                    <li><a href="uscb.html">USCB</a></li>
+                </ul>
+            </li>
+            <li><a href="hobbies_and_interest.html">Hobbies/Interest</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <!-- for this javascript slide_show.js to work, you need to have a default img
+             element coded outside the div that contains all of your slides -->
+        <img class="photos" id="slide" src="images/claire-and-me.jpg" alt="Claire and James">
+
+        <!-- this div is hidden by the CSS; the JavaScript is only using the information in this
+             div to update the img element above -->
+        <div id="slides">
+            <img class="photos" id="pictureA" src="images/claire-and-me.jpg" alt="Claire and James">
+            <img class="photos" id="pictureB" src="images/wedding.jpg" alt="Claire and James wedding day">
+            <img class="photos" id="pictureC" src="images/my-girls.jpg" alt="my family">
+            <img class="photos" id="pictureD" src="images/playing%20soccer.jpg" alt="James playing soccer">
+            <img class="photos" id="pictureE" src="images/james-with-first-born-child.jpg" alt="first born child">
+            <img class="photos" id="pictureF" src="images/julianna.jpg" alt="second born child Julianna Randall">
+        </div>
+    </section>
+
+    <div class="container">
+        <div id="Name">
+            <h1> James Woodson Randall</h1>
+            <h2>Family Man, Student, Future Technologist</h2>
+        </div>
+
+            <p>
+                My name is James Woodson Randall.  I was born in Dnipropetrovsk, Ukraine.
+                I grew up in the town of Lexington SC, where I went to school and graduated from Lexington High.
+                I played several sports growing up including soccer and football.  I met my wonderful wife while I
+                was preparing to join the Marine Corps in Lexington.  We moved to Beaufort in 2015 and started our
+                family in 2016, when my first daughter, Lorelei, was born.  In March of 2017, my second daughter
+                Julianna was born. Both of my parents still live in Lexington SC.
+                My most significant role is husband and father, and I spend much of my time and energy doing family
+                related activities. In addition however, I have several interests that I’ve been involved with for much
+                of my life, including drawing, working on computers, and repairing cell phones.  These interests led me
+                to pursue an Associates degree in Mechanical Design, and certifications in both AutoCAD and SolidWorks.
+                Currently I am pursuing my Bachelors degree in Computational Science from the University of South
+                Carolina Beaufort (USCB).
+                <br>
+                <br>
+                My hope is that once graduating, I can begin working in the technology industry where I can apply what
+                I have learned in both Mechanical Design and Computer Science.  I have a keen interest in the area of CAD,
+                Computer Graphics, and AI. I have developed skills in 2D and 3D design, and have experience with 3D printing.
+                I have assisted in the creation of home plan designs, as well as designs for furniture and cabinetry. I am
+                currently expanding my knowledge base with expertise in coding, networks, and security.
+                I look forward to the technology future filled with opportunities in a multitude of fields, and being able to
+                make significant contributions to it’s use and the overall benefit of society as a whole.
+            </p>
+    </div>
+</main>
+
+</body>
+</html>

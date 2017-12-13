@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    top: 0;
+    width: 100%;
+    background-image: url("../images/background_image-grey_1.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header{
+    height: 75px;
+    padding: 0.9375em  1.46% 0.9375em 1.46%; /* 15/1024 (desired width) *100 */
+    /* 15/16 (16 = default pixel which is 1em)  */
+}
+
+body {
+    max-width:1024px;
+    width: 97%;
+    margin: 0 auto;
+    padding: 0.625em 1.042% 0; /* 10/16 */
+}
+
+#nav_menu ul {
+    margin: 0 auto;
+    list-style: none;
+    position: relative;
+    /* So the first submenu can be positioned within the main menu */
+}
+
+/* The styles for the operation of the 3-tier navigation menu */
+#nav_menu{
+    margin: 1.25em auto 0; /* 20/16 */
+    float: none;
+    height: 40px;
+    width: 97.66%; /* 1000/1024 *100 */
+}
+
+
+#nav_menu a{
+    margin-top: 0.625em;
+    border: 2px solid;
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 25%;  /* 240/1024 *100 */
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#nav_menu ul ul {
+    display: none;         /* Don't display submenu until hover of the li element */
+    position: absolute;
+    text-align: center;
+}
+
+#nav_menu ul ul li {
+    float: none;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block; /* Display the submenu on hover of the li element */
+    width: 100%;
+}
+
+p:first-letter{
+    font-size: 3.125em;
+    text-indent: 2.1875em;
+}
+
+section{
+    text-align: center;
+}
+
+#Name{
+    text-align: center;
+    border: solid;
+    width: 43.95%; /*450/1024*100 */
+    height: 9.77%; /* 100/1024*100*/
+    margin:auto;
+
+}
+
+h1, h2{
+    line-height: 50px;
+    text-align: center;
+}
+
+#container{
+    width:100%;
+}
+
+p{
+    margin:auto;
+    font-size: 1.5625em;
+    line-height: 2.1875em;
+    width: 97.66%; /* 1000/1024 *100 */
+    padding: 1.84% 40px 1.57% 40px;
+    clear: left;
+}
+
+img {
+    /*margin-top: 50px;*/
+    padding: 2.1875em 1.05% 1.25em; /* 35/16 */
+    text-align: center;
+    margin: auto;
+    border-radius:4.6875em; /* 75/16 */
+    width: 49%; /* 950/1903*100 */
+    max-width: 100%;
+    min-width: 49%;
+
+}
+
+#slides img {
+    display: none;
+}
+
+@media only screen and (max-width:800px) {
+    html {
+        background-image:url("../images/background_image 2.jpg");
+    }
+    body {
+        font-size: 90%;
+    }
+
+}

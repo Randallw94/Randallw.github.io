@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url("../images/background_image-grey_1.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header{
+    height: 100px;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 10px 0;
+}
+
+/* The styles for the operation of the 3-tier navigation menu */
+#nav_menu ul {
+    margin: 0 auto;
+    font-size: 20px;
+    width: 750px;
+    list-style: none;
+    position: relative;    /* So the first submenu can be positioned within the main menu */
+}
+#nav_menu ul li {
+    float: left;
+}
+#nav_menu ul ul {
+    display: none;         /* Don't display submenu until hover of the li element */
+    position: absolute;
+}
+#nav_menu ul ul li {
+    float: none;           /* Display the submenus vertically */
+    position: relative;    /* So the second submenu can be positioned within the first submenu */
+}
+#nav_menu ul ul li ul {
+    position: absolute;
+    left: 100%;            /* Position the second submenu at the right side of the li element */
+    top: 0;                /* Position the second submenu at the top of the li element */
+}
+#nav_menu ul li.lastitem ul li ul {
+    position: absolute;
+    top: 0;                /* Position the second submenu at the top of the li element */
+}
+#nav_menu ul li:hover > ul {
+    display: block;        /* Display the submenu on hover of the li element */
+}
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* The styles for the formatting of the 3-tier navigation menu */
+
+#nav_menu a{
+    text-align: center;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 176px;
+    padding: 10px 0;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
+#nav_menu ul li a.lastitem {
+    width: 178px;               /* So the menu fills the 706px width of the page */
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    background-color: gray;
+    border-radius: 50%;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-style: normal;
+    font-size: 24pt;
+}
+
+#section_1{
+    width: 300px;
+    height: 400px;
+    font-size: 35px;
+    float: left;
+    margin:80px 200px 0;
+    line-height: 100px;
+}
+
+#scroller_A {
+    position: relative;
+}
+
+#scroller_A .innerScrollArea {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#scroller_A ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#scroller_A li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+}
+
+#scroller_B {
+    position: relative;
+}
+
+#scroller_B .innerScrollArea {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#scroller_B ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#scroller_B li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+}
+
+#section_2{
+    width: 300px;
+    height: 400px;
+    font-size: 35px;
+    float: left;
+    margin:100px 200px 0;
+    line-height: 100px;
+}
+
+h2{
+    text-align: center;
+    font-style: normal;
+    font-size: 24pt;
+    clear: left;
+    margin: auto;
+}
+
+#scroller_C {
+    position: relative;
+}
+
+#scroller_C .innerScrollArea {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#scroller_C ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#scroller_C li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+}
+
+#section_3{
+    width: 300px;
+    height: 400px;
+    font-size: 35px;
+    float: left;
+    margin:100px 200px 0;
+    line-height: 100px;
+}
+
+h3{
+    text-align: center;
+    font-style: normal;
+    font-size: 24pt;
+    clear: left;
+    margin: auto;
+}

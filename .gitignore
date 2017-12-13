@@ -1,0 +1,138 @@
+## Directory-based project format:
+.idea/
+# if you remove the above rule, at least ignore the follwing:
+
+# User-specific stuff:
+.idea/workspace.xml
+.idea/task_types.xml
+.idea/dictionaries
+
+# Sensitive or high-churn files:
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+# Gradle:
+.idea/gradle.xml
+.idea/libraries
+
+# Mongo Explorer plugin:
+.idea/mongoSettings.xml
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+
+
+### Intellij ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+
+/*.iml
+
+## Directory-based project format:
+.idea/
+# if you remove the above rule, at least ignore the follwing:
+
+# User-specific stuff:
+.idea/workspace.xml
+.idea/task_types.xml
+.idea/dictionaries
+
+# Sensitive or high-churn files:
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+# Gradle:
+.idea/gradle.xml
+.idea/libraries
+
+# Mongo Explorer plugin:
+.idea/mongoSettings.xml
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+
+*.a
+*.dylib
+*.so
+
+*.sw*
+
+*.cmake
+CMakeCache.txt
+CMakeFiles
+Makefile
+compile_commands.json
+moc_*
+*.moc
+hardfork.hpp
+
+lcov
+
+libraries/utilities/git_revision.cpp
+
+libraries/wallet/Doxyfile
+libraries/wallet/api_documentation.cpp
+libraries/wallet/doxygen
+
+programs/cli_wallet/cli_wallet
+programs/js_operation_serializer/js_operation_serializer
+programs/steemd/steemd
+programs/steemd/test
+programs/delayed_node
+programs/build_helpers/cat-parts
+programs/size_checker/size_checker
+programs/util/get_dev_key
+programs/util/inflation_model
+
+tests/app_test
+tests/chain_bench
+tests/chain_test
+tests/plugin_test
+tests/intense_test
+tests/performance_test
+
+doxygen
+
+wallet.json
+witness_node_data_dir
+
+*.wallet
+
+*.pyc
+*.pyo
+*.egg-info/

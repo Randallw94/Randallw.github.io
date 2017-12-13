@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url("../images/background_image-grey_1.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* since I am using left and right margins and padding
+ * as well as structural elements fluid.
+ *
+ * I used pixels pixels for top and bottom margins so I had to convert them to ems.
+ * For font-sizes, I had to convert pixels to percentages.
+ */
+
+header{
+    height: 75px;
+    padding: 0.9375em  1.46% 0.9375em 1.46%; /* 15/960 (desired width) *100 */
+     /* 15/16 (16 = default pixel which is 1em)  */}
+
+body {
+    font-family: 'Playfair Display', serif;
+    max-width:  1024px;
+    width: 98%;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+}
+
+#nav_menu{
+    margin: 1.25em auto 0; /* 20/16 */
+    float: none;
+    height: 50px;
+    width: 97.65%; /* 1000/1024 *100 */
+}
+
+#nav_menu ul {
+    margin: 0 auto;
+    list-style: none;
+    position: relative;
+     /* So the first submenu can be positioned within the main menu */
+ }
+
+#nav_menu a{
+    margin-top: 0.625em;
+    border: 2px solid;
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 25%;  /* 240/1024 *100 */
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#nav_menu ul ul {
+    display: none;         /* Don't display submenu until hover of the li element */
+    position: absolute;
+    text-align: center;
+}
+
+#nav_menu ul ul li {
+    float: none;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;        /* Display the submenu on hover of the li element */
+    width: 100%;
+}
+
+main{
+    margin:3em auto 1.875em; /* 60/16 ; 30/16 */
+    padding-top: 1.25em; /* 20/16 */
+    width: 58.6% /* 600/1024 *100 */
+}
+
+div #picture{
+    display: block;
+    border: double;
+    text-align: center;
+    margin: 0 auto;
+    width: 58.6%; /* 600/1024*100 */
+    max-width: 100%;
+    min-width: 80%;
+}
+
+main section{
+    width: 50%; /* 400/1024 *100 */
+    font-size: 1.25em;
+    margin: 0 auto 0.625em; /* 10/16 */
+    padding-top: 1em; /* 25/16 */
+    line-height: 2.1875em;
+    text-align: center;
+}
+
+main h1{
+    padding-bottom: 0.625em;
+}
+
+#email{
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
+}
+
+#major{
+    padding-bottom: 0.625em; /* 10/16 */
+}
+footer{
+    margin:0 auto 0.3125em;
+    padding:0.9375em 1.875% 0.9375em 1.875%;
+    text-align: center;
+    position: relative;
+}
+/*
+ *Added a media query for screens with a max-width of 960 pixels...
+ *
+*/
+
+
+@media only screen and (max-width:800px) {
+    html {
+        background-image:url("../images/background_image 2.jpg");
+    }
+    body {
+        font-size: 90%;
+    }
+
+}
