@@ -26,6 +26,15 @@
 
     <body>
 
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=914150278741345';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <header>
         <nav id="mobile_menu"></nav>
         <nav id="nav_menu">
@@ -73,6 +82,9 @@
     </main>
 
     <footer>
+        <div class="fb-like" data-href="https://randallw94.github.io/Randallw.github.io/"
+             data-layout="standard" data-action="like" data-size="large" data-show-faces="false"
+             data-share="true"></div>
         <p>If you like my website, please click the "Like" button above. Also please feel free to contact me at:</p>
         <a href="mailto:randallw@email.uscb.edu">randallw@email.uscb.edu</a>
         <p>&copy; December 13, 2017</p>

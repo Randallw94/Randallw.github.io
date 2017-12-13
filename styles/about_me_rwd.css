@@ -42,10 +42,9 @@ body {
     width: 97.66%; /* 1000/1024 *100 */
 }
 
-
 #nav_menu a{
     margin-top: 0.625em;
-    border: 2px solid;
+    border: 6px groove;
 }
 
 #nav_menu ul li {
@@ -132,7 +131,7 @@ p{
 
 img {
     /*margin-top: 50px;*/
-    padding: 2.1875em 1.05% 1.25em; /* 35/16 */
+    padding: 4em 1.05% 1.25em; /* 35/16 */
     text-align: center;
     margin: auto;
     border-radius:4.6875em; /* 75/16 */

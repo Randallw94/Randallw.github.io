@@ -51,7 +51,7 @@ body {
 
 #nav_menu a{
     margin-top: 0.625em;
-    border: 2px solid;
+    border: 6px groove;
 }
 
 #nav_menu ul li {

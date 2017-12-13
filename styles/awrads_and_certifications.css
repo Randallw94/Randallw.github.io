@@ -12,7 +12,6 @@ html {
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
-
 }
 
 header{
@@ -79,7 +78,6 @@ body {
     body {
         font-size: 90%;
     }
-
 }
 
 #nav_menu ul ul {
@@ -95,6 +93,33 @@ body {
 #nav_menu ul li:hover > ul {
     display: block; /* Display the submenu on hover of the li element */
     width: 100%;
+}
+
+#images{
+    position: relative;
+    margin-top: 60px;
+}
+
+.display-left, .display-left:hover{
+    color: red;
+}
+
+.display-right, .display-right:hover{
+    color: red;
+}
+
+.display-left{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 5%;
+}
+
+.display-right{
+    position: absolute;
+    top: 40%;
+    right: 0;
+    width: 5%;
 }
 
 @media only screen and (max-width:479px) {
@@ -136,61 +161,11 @@ body {
     display: block;        /* Display the submenu on hover of the li element */
 }
 
-/* The styles for the formatting of the 3-tier navigation menu */
-
-main{
-    font-size: 1em;
-    width: 97.66%; /* 1000/1024*100 */
-    margin:auto;
-    padding-top: 3.25em; /*100/16*/
-}
-
-main h1{
-    margin: 0 auto;
-    text-align: center;
-    width: 98%;
-}
-
-main ul{
-    font-size: 1.25em;
-    text-align: center;
-    padding-top: 1.5625em;
-    width: 97.66%;
-    margin-left: auto;
-    margin-right: auto;
-    list-style: none;
-    line-height: 3.75em;
-}
-
-main #container{
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1.25em;
-    width: 78.125% /* 800/1024 */
-}
-
- div.gallery{
-     text-align: center;
-     width: 100%;
-     height:200px;
-     margin-left:auto;
-     margin-right:auto;
-     margin-top: 1.25em;
-}
-
-footer{
-    margin:0 auto 0.3125em;
-    padding:0.9375em 1.875% 0.9375em 1.875%;
-    text-align: center;
-    bottom: 0;
-}
-
 #mobile_menu {
     display: none;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:767px) {
 
     #mobile_menu{
         display: block;
@@ -207,12 +182,9 @@ footer{
         font-size: 16px;
     }
 
+
     main{
         margin-top: 110px;
-    }
-
-    main h1{
-        font-size: 10px;
     }
 
     div #picture{
@@ -220,3 +192,4 @@ footer{
     }
 
 }
+

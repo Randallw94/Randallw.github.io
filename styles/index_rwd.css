@@ -51,7 +51,7 @@ body {
 
 #nav_menu a{
     margin-top: 0.625em;
-    border: 2px solid;
+    border: 6px groove;
 }
 
 #nav_menu ul li {
@@ -108,7 +108,7 @@ main{
 
 div #picture{
     display: block;
-    border: double;
+    border: 6px double;
     text-align: center;
     margin: 0 auto;
     width: 50%; /* 600/1024*100 */
@@ -137,6 +137,12 @@ main h1{
 
 #major{
     padding-bottom: 0.625em; /* 10/16 */
+}
+
+div.fb-like{
+    text-align: center;
+    margin: 0 auto;
+    width: 150px;
 }
 footer{
     margin:0 auto 0.3125em;
