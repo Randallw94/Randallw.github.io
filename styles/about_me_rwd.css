@@ -86,7 +86,6 @@ section{
 #Name{
     text-align: center;
     border: solid;
-    width: 43.95%; /*450/1024*100 */
     height: 9.77%; /* 100/1024*100*/
     margin:auto;
 
@@ -118,8 +117,7 @@ img {
     border-radius:4.6875em; /* 75/16 */
     width: 49%; /* 950/1903*100 */
     max-width: 100%;
-    min-width: 75%;
-
+    min-width: 85%;
 }
 
 #slides img {
