@@ -17,6 +17,7 @@ header{
     height: 75px;
     padding: 0.9375em  1.46% 0.9375em 1.46%; /* 15/1024 (desired width) *100 */
     /* 15/16 (16 = default pixel which is 1em)  */
+    text-align: center;
 }
 
 body {
@@ -57,6 +58,26 @@ body {
     display: block;
     text-decoration: none;
     color: black;
+}
+
+@media only screen and (max-width:479px) {
+
+    #mobile_menu{
+        display: block;
+        background-color: transparent;
+    }
+
+    #nav_menu{
+        display: none;
+    }
+
+    html {
+        background-image:url("../images/background_image 2.jpg");
+    }
+    body {
+        font-size: 90%;
+    }
+
 }
 
 #nav_menu ul ul {
@@ -124,17 +145,33 @@ img {
     display: none;
 }
 
+#mobile_menu {
+    display: none;
+}
+
 @media only screen and (max-width:767px) {
 
-    #nav_menu{
+    #mobile_menu{
         display: block;
+    }
+
+    #nav_menu{
+        display: none;
     }
 
     html {
         background-image:url("../images/background_image 2.jpg");
     }
     body {
-        font-size: 90%;
+        font-size: 16px;
+    }
+
+    main{
+        margin-top: 110px;
+    }
+
+    div #picture{
+        width: 40%;
     }
 
 }

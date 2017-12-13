@@ -15,7 +15,7 @@
 .slicknav_menu .slicknav_menutxt {
 	display: block;
 	line-height: 1.188em;
-	/*float: left;*/
+	/*text-align: center;*/
 }
 .slicknav_menu .slicknav_icon {
 	/*float: left;*/
@@ -88,17 +88,17 @@
 /* Button Text */
 
 .slicknav_menu .slicknav_menutxt {
-	color: black;
+	color: lightsalmon;
 }
 /* Button Lines */
 .slicknav_menu .slicknav_icon-bar {
-	background-color: black;
+	background-color: lightsalmon;
 }
 .slicknav_menu {
 	padding: 1px;
 }
 .slicknav_nav {
-	color: #fff;
+	color: lightsalmon;
 	margin: 0;
 	padding: 0;
 }
@@ -117,7 +117,7 @@
 	padding: 1px 10px;
 	margin: 2px 5px;
 	text-decoration: none;
-	color: black;
+	color: lightsalmon;
 }
 .slicknav_nav .slicknav_item a {
 	padding: 0;

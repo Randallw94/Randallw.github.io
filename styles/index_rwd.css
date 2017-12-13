@@ -21,7 +21,9 @@ html {
 header{
     height: 75px;
     padding: 0.9375em  1.46% 0.9375em 1.46%; /* 15/960 (desired width) *100 */
-     /* 15/16 (16 = default pixel which is 1em)  */}
+     /* 15/16 (16 = default pixel which is 1em)  */
+    text-align: center;
+}
 
 body {
     font-family: 'Playfair Display', serif;
@@ -101,7 +103,7 @@ body {
 main{
     margin:3em auto 1.875em; /* 60/16 ; 30/16 */
     padding-top: 1.25em; /* 20/16 */
-    width: 58.6% /* 600/1024 *100 */
+    width: 95%
 }
 
 div #picture{
@@ -109,13 +111,13 @@ div #picture{
     border: double;
     text-align: center;
     margin: 0 auto;
-    width: 58.6%; /* 600/1024*100 */
+    width: 50%; /* 600/1024*100 */
     max-width: 100%;
     min-width: 80%;
 }
 
 main section{
-    width: 50%; /* 400/1024 *100 */
+    width: 95%; /* 400/1024 *100 */
     font-size: 1.25em;
     margin: 0 auto 0.625em; /* 10/16 */
     padding-top: 1em; /* 25/16 */
