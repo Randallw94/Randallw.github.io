@@ -4,7 +4,6 @@
 }
 
 html {
-    top: 0;
     width: 100%;
     background-image: url("../images/background_image-grey_1.jpg");
     -webkit-background-size: cover;
@@ -37,7 +36,7 @@ body {
 
 #nav_menu {
     float: none;
-    height: 40px;
+    height: 2.5em;
     width: 97.66%; /* 1000/1024 *100 */
     margin: 0 auto;
 }
@@ -49,7 +48,8 @@ body {
 }
 
 #nav_menu a{
-     text-align: center;
+    font-size: 1.25em;
+    text-align: center;
     display: block;
     text-decoration: none;
     color:white;
@@ -84,15 +84,11 @@ body {
 
 /* The styles for the formatting of the 3-tier navigation menu */
 
-
-
-
-
 main{
-    font-size: 20px;
+    font-size: 1.25em;
     width: 97.66%; /* 1000/1024*100 */
     margin:auto;
-    padding-top: 6.25em; /*100/16*/
+    padding-top: 3.25em; /*100/16*/
 }
 
 main h1{
@@ -102,14 +98,14 @@ main h1{
 }
 
 main ul{
-    font-size: 20px;
+    font-size: 1.25em;
     text-align: center;
     padding-top: 1.5625em;
     width: 97.66%;
     margin-left: auto;
     margin-right: auto;
     list-style: none;
-    line-height: 60px;
+    line-height: 3.75em;
 }
 
 main #container{
@@ -137,12 +133,17 @@ footer{
 }
 
 
-@media only screen and (max-width:800px) {
-    html {
-        background-image:url("../images/background_image 2.jpg");
+@media only screen and (max-width:767px) {
+
+    #nav_menu {
+        display: block;
     }
+
+    html {
+        background-image: url("../images/background_image 2.jpg");
+    }
+
     body {
         font-size: 90%;
     }
-
 }

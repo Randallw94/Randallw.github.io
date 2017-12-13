@@ -37,7 +37,7 @@ body {
 #nav_menu{
     margin: 1.25em auto 0; /* 20/16 */
     float: none;
-    height: 40px;
+    height: 50px;
     width: 97.66%; /* 1000/1024 *100 */
 }
 
@@ -106,7 +106,7 @@ p{
     font-size: 1.5625em;
     line-height: 2.1875em;
     width: 97.66%; /* 1000/1024 *100 */
-    padding: 1.84% 40px 1.57% 40px;
+    padding: 1em 3.90625% 1em 3.90625%;
     clear: left;
 }
 
@@ -118,7 +118,7 @@ img {
     border-radius:4.6875em; /* 75/16 */
     width: 49%; /* 950/1903*100 */
     max-width: 100%;
-    min-width: 49%;
+    min-width: 75%;
 
 }
 
@@ -126,7 +126,12 @@ img {
     display: none;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:767px) {
+
+    #nav_menu{
+        display: block;
+    }
+
     html {
         background-image:url("../images/background_image 2.jpg");
     }
@@ -135,3 +140,4 @@ img {
     }
 
 }
+

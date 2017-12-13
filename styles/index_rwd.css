@@ -25,6 +25,7 @@ header{
 
 body {
     font-family: 'Playfair Display', serif;
+    font-size: 100%;
     max-width:  1024px;
     width: 98%;
     margin: 0 auto;
@@ -36,7 +37,7 @@ body {
     margin: 1.25em auto 0; /* 20/16 */
     float: none;
     height: 50px;
-    width: 97.65%; /* 1000/1024 *100 */
+    width: 97.66%; /* 1000/1024 *100 */
 }
 
 #nav_menu ul {
@@ -128,7 +129,12 @@ footer{
 */
 
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:767px) {
+
+    #nav_menu{
+        display: block;
+    }
+
     html {
         background-image:url("../images/background_image 2.jpg");
     }
